@@ -15,31 +15,6 @@ page {
   border-left: 1rpx solid #ccc; /* 左边框样式 */
 }
 
-/* 结果显示区域的样式设置 */
-.counter .result {
-  flex: 1;
-  position: relative;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  border-bottom: 5rpx solid #d5dde1; /* 下边框样式 */
-  background: rgba(215, 250, 252, 0.253); /* 背景颜色及透明度 */
-}
-
-/* 结果数字显示区域的样式设置 */
-.counter .result .showResult {
-  display: flex;
-  align-items: flex-end;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-  font-size: 100rpx; /* 数字的字体大小 */
-  width: 100%;
-  box-sizing: border-box;
-  padding: 20rpx; /* 内边距 */
-}
-
 /* 结果数字的样式设置 */
 .counter .result .showResult .result-num {
   overflow-x: auto; /* 溢出部分自动滚动 */
