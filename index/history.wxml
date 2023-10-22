@@ -1,0 +1,61 @@
+
+<button bindtap="sec_bt">Click for historical data</button>
+<view class="view1">
+<view>{{data1a}}</view> <!-- 用于显示从数据库获取的数据 -->
+<view>{{data1b}}</view>
+<view>{{data1c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data2a}}</view> 
+<view>{{data2b}}</view>
+<view>{{data2c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data3a}}</view> 
+<view>{{data3b}}</view>
+<view>{{data3c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data4a}}</view> 
+<view>{{data4b}}</view>
+<view>{{data4c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data5a}}</view> 
+<view>{{data5b}}</view>
+<view>{{data5c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data6a}}</view> 
+<view>{{data6b}}</view>
+<view>{{data6c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data7a}}</view> 
+<view>{{data7b}}</view>
+<view>{{data7c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data8a}}</view> 
+<view>{{data8b}}</view>
+<view>{{data8c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data9a}}</view> 
+<view>{{data9b}}</view>
+<view>{{data9c}}</view>
+</view>
+
+<view class="view1">
+<view>{{data10a}}</view> 
+<view>{{data10b}}</view>
+<view>{{data10c}}</view>
+</view>
