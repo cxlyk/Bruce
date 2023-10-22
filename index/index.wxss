@@ -1,0 +1,100 @@
+page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-image: linear-gradient(to top, #ffffff 0%, #C2ffd8 100%);
+}
+
+/* 计算器的样式设置 */
+.counter {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 60rpx; /* 设置字体大小 */
+  border-top: 1rpx solid #ccc; /* 上边框样式 */
+  border-left: 1rpx solid #ccc; /* 左边框样式 */
+}
+
+/* 结果显示区域的样式设置 */
+.counter .result {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  border-bottom: 5rpx solid #d5dde1; /* 下边框样式 */
+  background: rgba(215, 250, 252, 0.253); /* 背景颜色及透明度 */
+}
+
+/* 结果数字显示区域的样式设置 */
+.counter .result .showResult {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  font-size: 100rpx; /* 数字的字体大小 */
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx; /* 内边距 */
+}
+
+/* 结果数字的样式设置 */
+.counter .result .showResult .result-num {
+  overflow-x: auto; /* 溢出部分自动滚动 */
+  text-align: end; /* 文本右对齐 */
+  word-wrap: break-word; /* 换行显示 */
+}
+
+/* 按钮区域的样式设置 */
+.counter .btns {
+  flex: 1;
+}
+
+/* 总体按钮样式设置 */
+.counter .btns .row {
+  display: flex;
+}
+
+/* 按钮的具体样式设置 */
+.counter .btns .row .col {
+  transition: all 0.3s; /* 按钮变化的过渡效果时间 */
+  flex-basis: 25%; /* 列的宽度占比 */
+  height: 150rpx; /* 按钮高度 */
+  border-right: 1rpx solid #ccc; /* 右边框样式 */
+  border-bottom: 1rpx solid #ccc; /* 下边框样式 */
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50rpx; /* 按钮字体大小 */
+}
+
+/* 清除按钮C的颜色 */
+.counter .btns .row .col.clear {
+  color: rgb(250, 3, 3);
+}
+
+/* 零按钮的宽度占比为50%，因为要占两个按钮的大小*/
+.counter .btns .row .col.zero {
+  flex-basis: 50%;
+}
+
+/* 最后一个按钮和除号按钮的颜色 */
+.counter .btns .row .col:last-child,
+.counter .btns .row .col.chu {
+  color: #0345f8;
+}
+
+/* 等号按钮的颜色和样式设置 */
+.counter .btns .row .col.save {
+  color: #000000;
+  font-size: 100rpx;
+  font-weight: bolder;
+}
+
+/* 按钮的悬停背景色 */
+.counter .btns .row .col.hover-bg {
+  background:rgb(187, 187, 187);
+}

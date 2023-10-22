@@ -1,0 +1,46 @@
+<view class="counter"> 
+  <view class="result"> 
+    <view class="showResult"> 
+      <view class="result-num">{{counter.expression[0]}}</view> <!-- 显示第一个数字的视图 -->
+      <view class="result-num">{{counter.expression[1]}}</view> <!-- 显示运算符号的视图 -->
+      <view class="result-num">{{counter.expression[2]}}</view> <!-- 显示第三个数字的视图 -->
+    </view>
+  </view>
+  <view class="btns"> <!-- 按钮区域 -->
+    <!-- 第一行按钮 -->
+    <view class="row">
+      <view class="col clear" hover-class="hover-bg" bindtap="resetBtn">C</view> 
+      <view class="col" hover-class="hover-bg" bindtap="delBtn">DEL</view> 
+      <view class="col chu" hover-class="hover-bg" bindtap="operatorBtn" data-val="%">%</view> 
+      <view class="col" hover-class="hover-bg" bindtap="operatorBtn" data-val="÷">÷</view>
+    </view>
+    <!-- 第二行按钮 -->
+    <view class="row">
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="7">7</view> 
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="8">8</view>
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="9">9</view>
+      <view class="col" hover-class="hover-bg" bindtap="operatorBtn" data-val="×">×</view> 
+    </view>
+    <!-- 第三行按钮 -->
+    <view class="row">
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="4">4</view> 
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="5">5</view> 
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="6">6</view> 
+      <view class="col" hover-class="hover-bg" bindtap="operatorBtn" data-val="-">-</view> 
+    </view>
+    <!-- 第四行按钮 -->
+    <view class="row">
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="1">1</view> 
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="2">2</view>
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val="3">3</view> 
+      <view class="col" hover-class="hover-bg" bindtap="operatorBtn" data-val="+">+</view> 
+    </view>
+    <!-- 第五行按钮 -->
+    <view class="row">
+      <view class="col zero" hover-class="hover-bg" bindtap="numBtn" data-val="0">0</view>
+      <!-- <view class="col history" hover-class="hover-bg" bindtap="callhistory" >history</view> -->
+      <view class="col" hover-class="hover-bg" bindtap="numBtn" data-val=".">.</view> 
+      <view class="col save" hover-class="hover-bg" bindtap="finish">=</view> 
+    </view>
+  </view>
+</view>
